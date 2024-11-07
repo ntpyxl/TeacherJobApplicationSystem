@@ -23,12 +23,14 @@ require_once "core/functions.php";
         
         <hr style="width: 99%; height: 2px; color: black; background-color: black;">
 
-        <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="GET">
-            <label for="searchBar">Search</label>
-            <input type="text" name="searchBar">
-            <input type="submit" name="searchButton" value="Search application">
-        </form>
-        <input type="submit" name="clearButton" value="Clear search query" onclick="window.location.href='index.php'">
+        <div style="display: flex; align-items: center;">
+            <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="GET">
+                <label for="searchBar">Search</label>
+                <input type="text" name="searchBar">
+                <input type="submit" name="searchButton" value="Search application">
+            </form>
+            <input type="submit" name="clearButton" value="Clear search query" onclick="window.location.href='index.php'">
+        </div>
 
         <table>
             <tr>

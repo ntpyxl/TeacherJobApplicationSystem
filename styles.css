@@ -18,6 +18,10 @@ input {
     box-sizing: border-box;
 }
 
+form {
+    margin: 0px;
+}
+
 input[name="age"], [name="experienceInMonths"] {
     width: 70px;
 }
@@ -30,15 +34,17 @@ input[name="home_address"] {
     width: 700px;
 }
 
-input:focus {
-    background-color: #2de5fd;
+input[name="editApplicationButton"], [name="submitApplicationButton"] {
+    font-weight: bold;
 }
 
-textarea {
-    padding: 6px 8px;
-    margin: 8px 2px;
-    box-sizing: border-box;
-    resize: none;
+input[name="deleteApplicationButton"] {
+    background-color: #ff2727;
+    font-weight: bold;
+}
+
+input:focus {
+    background-color: #2de5fd;
 }
 
 select {
